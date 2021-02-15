@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://tiles/navigable.tres" type="TileSet" id=1]
+[ext_resource path="res://img/morphie_01_resize.png" type="Texture" id=2]
+[ext_resource path="res://scenes/main.gd" type="Script" id=3]
+[ext_resource path="res://scenes/player.gd" type="Script" id=4]
+
+[node name="main" type="Node"]
+script = ExtResource( 3 )
+
+[node name="Navigation2D" type="Navigation2D" parent="."]
+
+[node name="TileMap" type="TileMap" parent="Navigation2D"]
+tile_set = ExtResource( 1 )
+format = 1
+tile_data = PoolIntArray( 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 0, 65542, 0, 0, 65543, 0, 0, 65544, 0, 0, 65545, 0, 0, 65546, 0, 0, 65547, 0, 0, 65548, 0, 0, 65549, 0, 0, 65550, 0, 0, 65551, 0, 0, 131073, 0, 0, 131087, 0, 0, 196609, 0, 0, 196623, 0, 0, 262145, 0, 0, 262159, 0, 0, 327681, 0, 0, 327695, 0, 0, 393217, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 393231, 0, 0, 458753, 0, 0, 458759, 0, 0, 458762, 0, 0, 458767, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0 )
+
+[node name="player" type="KinematicBody2D" parent="."]
+position = Vector2( 107, 73 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="player"]
+scale = Vector2( 0.05, 0.05 )
+texture = ExtResource( 2 )
