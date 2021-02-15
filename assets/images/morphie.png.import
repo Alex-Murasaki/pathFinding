@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/morphie_01_resize.png-d27b7d619667597150a2feeefadc455c.stex"
+path="res://.import/morphie.png-b7f747354777ff1b191a5303aa283fd4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/morphie_01_resize.png"
-dest_files=[ "res://.import/morphie_01_resize.png-d27b7d619667597150a2feeefadc455c.stex" ]
+source_file="res://assets/images/morphie.png"
+dest_files=[ "res://.import/morphie.png-b7f747354777ff1b191a5303aa283fd4.stex" ]
 
 [params]
 
